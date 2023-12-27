@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-color: #202632;
+
+}
+
+main{
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  height: 100vh; /* 100% de la altura de la ventana */
+  gap: 5em;
+}
+
+.container{
+    width: 40%;
+    height: 300px;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #313a49;
+}
+
+.randomDince{
+  position: absolute;
+  top: 65%; /* Ajusta la posición vertical */
+  left: 33%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 10px;
+}
+
+.randomDince img{
+    width: 55px;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: #51ffaa;
+    cursor: pointer;
+}
+
+.credit{
+    color: white;
+}
+
+.credit-name{
+    color: #51ffaa;
+    font-size: 300;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#adviceID{
+    color: #51ffaa;
+    font-size: 300;
+    font-weight: 400;
+}
+
+.text{
+    color: #c7d9E3;
+    font-size:22px;
+    font-weight: 500;
+}
+
+.icons-change{
+    width: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas (ej. teléfonos) */
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .randomDince{
+        position: absolute;
+        top: 60%; /* Ajusta la posición vertical */
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        padding: 10px;
+      }
+    
+    .container{
+        width: 370px;
+    }
+
+  }
